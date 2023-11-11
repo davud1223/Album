@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lime;
+            height: 70px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            background-color: lime;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        .head{
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+
+        }
+        .img{
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            align-items: center;
+        }
+        .img1{
+            background-image: url(gence3.jpg);
+        }
+        .img2{
+            background-image: url(baku.jpg);
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: aqua;
+            height: 300px;
+            width: 100%;
+            gap: 10px;
+            padding: 2px;
+        }
+        .item{
+            display: flex;
+            background-color: red;
+            background-size: cover;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-image: url(Baki.jpg);
+        }
+        .item3{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-image: url(Gence.jpeg);
+        }
+        .item2{
+            background-image: url(Gence2.jpeg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Davudun Albomu</h1>
+    </header>
+    <main>
+        <div class="head">
+            <h1>ASPA GROUP</h1>
+            <div class="img img1"></div>
+            <div class="img img2"></div>
+        </div>
+
+        <div class="grid-container">
+            <div class="item item1"></div>
+            <div class="item item2"></div>
+            <div class="item item3"></div>
+            <div class="item item4"></div>
+            <div class="item item5"></div>
+            <div class="item item6"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Design by Davud &copy; 2023</p>
+    </footer>
+
+</body>
+
+</html>
